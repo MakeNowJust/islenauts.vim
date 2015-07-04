@@ -67,3 +67,6 @@ exe 'hi! CursorLine   '                                                  . ' cte
 exe 'hi! CursorColumn '                                                  . ' ctermbg=' . s:gray4_256   . ' guibg=' . s:gray4 . ' cterm=NONE gui=NONE'
 exe 'hi! IncSearch    '                                                  . ' ctermbg=' . s:gray2_256   . ' guibg=' . s:gray1
 exe 'hi! Visual       '                                                  . ' ctermbg=' . s:gray2_256   . ' guibg=' . s:gray2
+
+hi link vimOption Identifier
+hi link vimIsCommand Identifier
