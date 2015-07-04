@@ -52,10 +52,9 @@ exe 'hi! Constant     ctermfg=' . s:yellow_256  . ' guifg=' . s:yellow
 exe 'hi! Identifier   ctermfg=' . s:blue_256    . ' guifg=' . s:blue
 exe 'hi! Statement    ctermfg=' . s:green_256   . ' guifg=' . s:green
 exe 'hi! PreProc      ctermfg=' . s:gray1_256   . ' guifg=' . s:gray1
-exe 'hi! Function     ctermfg=' . s:blue_256    . ' guifg=' . s:blue
 exe 'hi! Type         ctermfg=' . s:green_256   . ' guifg=' . s:green
 exe 'hi! Special      ctermfg=' . s:cyan_256    . ' guifg=' . s:cyan
-exe 'hi! Underlined   ctermfg=' . s:gray1_256   . ' guifg=' . s:gray1
+exe 'hi! Underlined   ctermfg=' . s:cyan_256    . ' guifg=' . s:cyan1    . ' cterm=none gui=none'
 exe 'hi! Ignore       ctermfg=' . s:gray1_256   . ' guifg=' . s:gray1    . ' ctermbg=' . s:yellow_256  . ' guibg=' . s:yellow
 exe 'hi! Todo         ctermfg=' . s:gray3_256   . ' guifg=' . s:gray3    . ' ctermbg=' . s:yellow_256  . ' guibg=' . s:yellow
 exe 'hi! Error        ctermfg=' . s:gray1_256   . ' guifg=' . s:gray1    . ' ctermbg=' . s:red_256     . ' guibg=' . s:red
@@ -63,8 +62,8 @@ exe 'hi! Error        ctermfg=' . s:gray1_256   . ' guifg=' . s:gray1    . ' cte
 exe 'hi! Cursor       '                                                  . ' ctermbg=' . s:gray1_256   . ' guibg=' . s:gray1
 exe 'hi! LineNr       ctermfg=' . s:magenta_256 . ' guifg=' . s:magenta  . ' ctermbg=' . s:gray4_256   . ' guibg=' . s:gray4
 exe 'hi! CursorLineNr ctermfg=' . s:red_256     . ' guifg=' . s:red      . ' ctermbg=' . s:black_256   . ' guibg=' . s:black
-exe 'hi! CursorLine   '                                                  . ' ctermbg=' . s:gray4_256   . ' guibg=' . s:gray4 . ' cterm=NONE gui=NONE'
-exe 'hi! CursorColumn '                                                  . ' ctermbg=' . s:gray4_256   . ' guibg=' . s:gray4 . ' cterm=NONE gui=NONE'
+exe 'hi! CursorLine   '                                                  . ' ctermbg=' . s:gray4_256   . ' guibg=' . s:gray4 . ' cterm=none gui=none'
+exe 'hi! CursorColumn '                                                  . ' ctermbg=' . s:gray4_256   . ' guibg=' . s:gray4 . ' cterm=none gui=none'
 exe 'hi! IncSearch    '                                                  . ' ctermbg=' . s:gray2_256   . ' guibg=' . s:gray1
 exe 'hi! Visual       '                                                  . ' ctermbg=' . s:gray2_256   . ' guibg=' . s:gray2
 
