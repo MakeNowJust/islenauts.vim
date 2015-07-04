@@ -71,3 +71,5 @@ exe 'hi! Visual       '                                                  . ' cte
 
 hi link vimOption Identifier
 hi link vimIsCommand Identifier
+
+hi link markdownCode Delimiter
