@@ -52,9 +52,11 @@ exe 'hi! Constant     ctermfg=' . s:yellow_256  . ' guifg=' . s:yellow
 exe 'hi! Identifier   ctermfg=' . s:blue_256    . ' guifg=' . s:blue
 exe 'hi! Statement    ctermfg=' . s:green_256   . ' guifg=' . s:green
 exe 'hi! PreProc      ctermfg=' . s:gray1_256   . ' guifg=' . s:gray1
+exe 'hi! Include      ctermfg=' . s:green_256   . ' guifg=' . s:green
 exe 'hi! Type         ctermfg=' . s:green_256   . ' guifg=' . s:green
 exe 'hi! Special      ctermfg=' . s:cyan_256    . ' guifg=' . s:cyan
-exe 'hi! Underlined   ctermfg=' . s:cyan_256    . ' guifg=' . s:cyan     . ' cterm=none gui=none'
+exe 'hi! Delimiter    ctermfg=' . s:green_256   . ' guifg=' . s:green
+exe 'hi! Underlined   ctermfg=' . s:magenta_256 . ' guifg=' . s:magenta  . ' cterm=none gui=none'
 exe 'hi! Ignore       ctermfg=' . s:gray1_256   . ' guifg=' . s:gray1    . ' ctermbg=' . s:yellow_256  . ' guibg=' . s:yellow
 exe 'hi! Todo         ctermfg=' . s:gray3_256   . ' guifg=' . s:gray3    . ' ctermbg=' . s:yellow_256  . ' guibg=' . s:yellow
 exe 'hi! Error        ctermfg=' . s:gray1_256   . ' guifg=' . s:gray1    . ' ctermbg=' . s:red_256     . ' guibg=' . s:red
