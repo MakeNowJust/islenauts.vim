@@ -3,6 +3,12 @@
 " URL:  https://github.com/MakeNowJust/islenauts-vim
 " License: MIT <https://makenowjust.github.com/license/mit?2015>
 "
+"         _
+" o      | |
+"     ,  | |  _   _  _    __,        _|_  ,
+" |  / \_|/  |/  / |/ |  /  |  |   |  |  / \_
+" |_/ \/ |__/|__/  |  |_/\_/|_/ \_/|_/|_/ \/
+"
 
 set background=dark
 hi clear
