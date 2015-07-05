@@ -77,6 +77,8 @@ exe 'hi! CursorColumn '                                                  . ' cte
 exe 'hi! IncSearch    '                                                  . ' ctermbg=' . s:gray2_256   . ' guibg=' . s:gray1
 exe 'hi! Visual       '                                                  . ' ctermbg=' . s:gray2_256   . ' guibg=' . s:gray2
 exe 'hi! NonText      '                                                  . ' ctermbg=' . s:gray3_256   . ' guibg=' . s:gray3
+exe 'hi! Folded       ctermfg=' . s:green_256   . ' guifg=' . s:green    . ' ctermbg=' . s:gray4_256   . ' guibg=' . s:gray4
+exe 'hi! FoldColumn   ctermfg=' . s:magenta_256 . ' guifg=' . s:magenta  . ' ctermbg=' . s:black_256   . ' guibg=' . s:black . ' cterm=bold gui=bold'
 
 " for VimL
 hi default link vimOption Identifier
