@@ -5,10 +5,10 @@ islenauts.vim is the color scheme based on [islenauts](https://github.com/MakeNo
 ## install
 
 ```viml
-# For neobundle.vim users
+" For neobundle.vim users
 NeoBundle 'MakeNowJust/islenauts.vim'
 
-# For Vundle users
+" For Vundle users
 Plugin 'MakeNowJust/islenauts.vim'
 ```
 
