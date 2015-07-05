@@ -2,6 +2,12 @@
 
 islenauts.vim is the color scheme based on [islenauts](https://github.com/MakeNowJust/islenauts).
 
+            _
+    o      | |
+        ,  | |  _   _  _    __,        _|_  ,
+    |  / \_|/  |/  / |/ |  /  |  |   |  |  / \_
+    |_/ \/ |__/|__/  |  |_/\_/|_/ \_/|_/|_/ \/
+
 ## install
 
 ```viml
