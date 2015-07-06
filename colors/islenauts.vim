@@ -122,4 +122,11 @@ hi default link javascriptNumber Number
 hi default link javascriptFunction Statement
 " }}}
 
+" highlights for GitGutter {{{
+exe 'hi! GitGutterAdd    ctermfg=' . s:blue_256   . 'guifg=' . s:blue   . s:signbg . ' cterm=bold gui=bold'
+exe 'hi! GitGutterChange ctermfg=' . s:yellow_256 . 'guifg=' . s:yellow . s:signbg . ' cterm=bold gui=bold'
+exe 'hi! GitGutterDelete ctermfg=' . s:red_256    . 'guifg=' . s:red    . s:signbg . ' cterm=bold gui=bold'
+hi link GitGutterChangeDelete GitGutterChange
+" }}}
+
 " vim: fdm=marker fdc=2 fdl=0
