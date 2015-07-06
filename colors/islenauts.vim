@@ -11,14 +11,19 @@
 " |_/ \/ |__/|__/  |  |_/\_/|_/ \_/|_/|_/ \/
 "
 
+" if you copied, renamed and edited this color scheme,
+" it would set color scheme's name remotely.
+let g:colors_name = expand('<sfile>:t:r')
+
+" basic configurations {{{
 set background=dark
 hi clear
 if exists("syntax_on")
   syntax reset
 endif
+" }}}
 
-let g:colors_name = expand('<sfile>:t:r')
-
+" color variables {{{
 let s:black    = "#162324"
 let s:white    = "#EDF2F2"
 let s:gray1    = "#B5C9C9"
@@ -53,6 +58,9 @@ let s:magenta_256 = s:rgb_to_256(s:magenta)
 let s:blue_256    = s:rgb_to_256(s:blue)
 let s:cyan_256    = s:rgb_to_256(s:cyan)
 
+" }}}
+
+" highlights in text area {{{
 exe 'hi! Normal       ctermfg=' . s:white_256   . ' guifg=' . s:white    . ' ctermbg=' . s:gray3_256    . ' guibg=' . s:gray3
 exe 'hi! Comment      ctermfg=' . s:gray2_256   . ' guifg=' . s:gray2
 exe 'hi! Constant     ctermfg=' . s:yellow_256  . ' guifg=' . s:yellow
@@ -70,6 +78,8 @@ exe 'hi! Ignore       ctermfg=' . s:gray1_256   . ' guifg=' . s:gray1    . ' cte
 exe 'hi! Todo         ctermfg=' . s:gray3_256   . ' guifg=' . s:gray3    . ' ctermbg=' . s:yellow_256  . ' guibg=' . s:yellow
 exe 'hi! Error        ctermfg=' . s:gray1_256   . ' guifg=' . s:gray1    . ' ctermbg=' . s:red_256     . ' guibg=' . s:red
 
+" }}}
+" highlights in outer of text area {{{
 exe 'hi! Cursor       '                                                  . ' ctermbg=' . s:gray1_256   . ' guibg=' . s:gray1
 exe 'hi! LineNr       ctermfg=' . s:magenta_256 . ' guifg=' . s:magenta  . ' ctermbg=' . s:gray4_256   . ' guibg=' . s:gray4
 exe 'hi! CursorLineNr ctermfg=' . s:red_256     . ' guifg=' . s:red      . ' ctermbg=' . s:black_256   . ' guibg=' . s:black
@@ -80,14 +90,15 @@ exe 'hi! Visual       '                                                  . ' cte
 exe 'hi! NonText      '                                                  . ' ctermbg=' . s:gray3_256   . ' guibg=' . s:gray3
 exe 'hi! Folded       ctermfg=' . s:green_256   . ' guifg=' . s:green    . ' ctermbg=' . s:gray4_256   . ' guibg=' . s:gray4
 exe 'hi! FoldColumn   ctermfg=' . s:magenta_256 . ' guifg=' . s:magenta  . ' ctermbg=' . s:black_256   . ' guibg=' . s:black . ' cterm=bold gui=bold'
+" }}}
 
-" for VimL
+" highlights for VimL {{{
 hi default link vimOption Identifier
 hi default link vimIsCommand Identifier
 hi default link vimHiGroup Identifier
 hi default link vimGroup Identifier
-
-" for Markdown
+" }}}
+" highlights for Markdown {{{
 exe 'hi markdownItalic ctermfg=' . s:blue_256    . ' guifg=' . s:blue    . ' cterm=bold gui=bold'
 exe 'hi markdownBold   ctermfg=' . s:green_256   . ' guifg=' . s:green   . ' cterm=bold gui=bold'
 exe 'hi markdownH1     ctermfg=' . s:green_256   . ' guifg=' . s:green   . ' cterm=bold gui=bold'
@@ -102,6 +113,9 @@ hi default link markdownHeadingRule markdownHeadingDelimiter
 hi default link markdownH4 markdownH3
 hi default link markdownH5 markdownH3
 hi default link markdownH6 markdownH3
-
-" for JavaScript
+" }}}
+" highlights for JavaScript {{{
 hi default link javascriptNumber Number
+" }}}
+
+" vim: fdm=marker fdc=2 fdl=0
