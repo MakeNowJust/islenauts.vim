@@ -1,7 +1,8 @@
 "
-" Name: islenauts.vim
-" URL:  https://github.com/MakeNowJust/islenauts-vim
-" License: MIT <https://makenowjust.github.com/license/mit?2015>
+" Name:       islenauts.vim
+" URL:        https://github.com/MakeNowJust/islenauts.vim
+" License:    MIT <https://makenowjust.github.com/license/mit?2015>
+" Repository: https://github.com/MakeNowJust/islenauts.vim
 "
 "         _
 " o      | |
