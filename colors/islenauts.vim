@@ -119,6 +119,7 @@ hi default link markdownH6 markdownH3
 " }}}
 " highlights for JavaScript {{{
 hi default link javascriptNumber Number
+hi default link javascriptFunction Statement
 " }}}
 
 " vim: fdm=marker fdc=2 fdl=0
