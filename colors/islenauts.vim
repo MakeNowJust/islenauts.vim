@@ -58,6 +58,7 @@ let s:magenta_256 = s:rgb_to_256(s:magenta)
 let s:blue_256    = s:rgb_to_256(s:blue)
 let s:cyan_256    = s:rgb_to_256(s:cyan)
 
+let s:signbg = ' ctermbg=' . s:gray4_256 . ' guibg=' . s:gray4
 " }}}
 
 " highlights in text area {{{
@@ -67,29 +68,31 @@ exe 'hi! Constant     ctermfg=' . s:yellow_256  . ' guifg=' . s:yellow
 exe 'hi! Number       ctermfg=' . s:cyan_256    . ' guifg=' . s:cyan
 exe 'hi! Boolean      ctermfg=' . s:cyan_256    . ' guifg=' . s:cyan
 exe 'hi! Identifier   ctermfg=' . s:blue_256    . ' guifg=' . s:blue
-exe 'hi! Statement    ctermfg=' . s:green_256   . ' guifg=' . s:green
-exe 'hi! PreProc      ctermfg=' . s:gray1_256   . ' guifg=' . s:gray1
+exe 'hi! Statement    ctermfg=' . s:green_256   . ' guifg=' . s:green    . ' cterm=none gui=none'
+exe 'hi! PreProc      ctermfg=' . s:gray2_256   . ' guifg=' . s:gray2
 exe 'hi! Include      ctermfg=' . s:green_256   . ' guifg=' . s:green
 exe 'hi! Type         ctermfg=' . s:green_256   . ' guifg=' . s:green
 exe 'hi! Special      ctermfg=' . s:magenta_256 . ' guifg=' . s:magenta
 exe 'hi! Delimiter    ctermfg=' . s:green_256   . ' guifg=' . s:green
 exe 'hi! Underlined   ctermfg=' . s:magenta_256 . ' guifg=' . s:magenta  . ' cterm=none gui=none'
-exe 'hi! Ignore       ctermfg=' . s:gray1_256   . ' guifg=' . s:gray1    . ' ctermbg=' . s:yellow_256  . ' guibg=' . s:yellow
-exe 'hi! Todo         ctermfg=' . s:gray3_256   . ' guifg=' . s:gray3    . ' ctermbg=' . s:yellow_256  . ' guibg=' . s:yellow
-exe 'hi! Error        ctermfg=' . s:gray1_256   . ' guifg=' . s:gray1    . ' ctermbg=' . s:red_256     . ' guibg=' . s:red
-
+exe 'hi! Ignore       ctermfg=' . s:gray3_256   . ' guifg=' . s:gray3    . ' ctermbg=' . s:yellow_256  . ' guibg=' . s:yellow
+exe 'hi! Todo         ctermfg=' . s:gray3_256   . ' guifg=' . s:gray3    . ' ctermbg=' . s:green_256   . ' guibg=' . s:green
+exe 'hi! Error        ctermfg=' . s:gray3_256   . ' guifg=' . s:gray3    . ' ctermbg=' . s:red_256     . ' guibg=' . s:red
 " }}}
 " highlights in outer of text area {{{
 exe 'hi! Cursor       '                                                  . ' ctermbg=' . s:gray1_256   . ' guibg=' . s:gray1
-exe 'hi! LineNr       ctermfg=' . s:magenta_256 . ' guifg=' . s:magenta  . ' ctermbg=' . s:gray4_256   . ' guibg=' . s:gray4
-exe 'hi! CursorLineNr ctermfg=' . s:red_256     . ' guifg=' . s:red      . ' ctermbg=' . s:black_256   . ' guibg=' . s:black
+exe 'hi! LineNr       ctermfg=' . s:gray3_256   . ' guifg=' . s:gray3    . ' ctermbg=' . s:gray4_256   . ' guibg=' . s:gray4
+exe 'hi! CursorLineNr ctermfg=' . s:magenta_256 . ' guifg=' . s:magenta  . ' ctermbg=' . s:black_256   . ' guibg=' . s:black
 exe 'hi! CursorLine   '                                                  . ' ctermbg=' . s:gray4_256   . ' guibg=' . s:gray4 . ' cterm=none gui=none'
 exe 'hi! CursorColumn '                                                  . ' ctermbg=' . s:gray4_256   . ' guibg=' . s:gray4 . ' cterm=none gui=none'
-exe 'hi! IncSearch    '                                                  . ' ctermbg=' . s:gray2_256   . ' guibg=' . s:gray1
-exe 'hi! Visual       '                                                  . ' ctermbg=' . s:gray2_256   . ' guibg=' . s:gray2
-exe 'hi! NonText      '                                                  . ' ctermbg=' . s:gray3_256   . ' guibg=' . s:gray3
-exe 'hi! Folded       ctermfg=' . s:green_256   . ' guifg=' . s:green    . ' ctermbg=' . s:gray4_256   . ' guibg=' . s:gray4
-exe 'hi! FoldColumn   ctermfg=' . s:magenta_256 . ' guifg=' . s:magenta  . ' ctermbg=' . s:black_256   . ' guibg=' . s:black . ' cterm=bold gui=bold'
+exe 'hi! ColorColumn  '                                                  . ' ctermbg=' . s:gray1_256   . ' guibg=' . s:gray1
+exe 'hi! IncSearch    '                                                  . ' ctermbg=' . s:gray1_256   . ' guibg=' . s:gray1
+exe 'hi! Visual       '                                                  . ' ctermbg=' . s:gray1_256   . ' guibg=' . s:gray1
+exe 'hi! NonText      ctermfg=' . s:gray2_256   . ' guifg=' . s:gray2    . ' ctermbg=' . s:gray3_256   . ' guibg=' . s:gray3
+exe 'hi! Folded       ctermfg=' . s:white_256   . ' guifg=' . s:white    . ' ctermbg=' . s:gray2_256   . ' guibg=' . s:gray2
+exe 'hi! FoldColumn   ctermfg=' . s:green_256   . ' guifg=' . s:green    . ' ctermbg=' . s:gray4_256   . ' guibg=' . s:gray4 . ' cterm=bold gui=bold'
+exe 'hi! SignColumn   '                                                  . s:signbg
+exe 'hi! Search       '                                                  . ' ctermbg=' . s:gray2_256   . ' guibg=' . s:gray2
 " }}}
 
 " highlights for VimL {{{
