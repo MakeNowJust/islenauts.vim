@@ -24,6 +24,14 @@ endif
 " }}}
 
 " color variables {{{
+function! s:rgb_to_256(color)
+  let l:r = str2nr(a:color[1:2], 16) * 6 / 256
+  let l:g = str2nr(a:color[3:4], 16) * 6 / 256
+  let l:b = str2nr(a:color[5:6], 16) * 6 / 256
+
+  return l:r * 36 + l:g * 6 + l:b + 16
+endfunction
+
 let s:black    = "#162324"
 let s:white    = "#EDF2F2"
 let s:gray1    = "#B5C9C9"
@@ -36,14 +44,6 @@ let s:yellow   = "#F0E09E"
 let s:magenta  = "#F06EE2"
 let s:blue     = "#7377FA"
 let s:cyan     = "#74E3DA"
-
-function! s:rgb_to_256(color)
-  let l:r = str2nr(a:color[1:2], 16) * 6 / 256
-  let l:g = str2nr(a:color[3:4], 16) * 6 / 256
-  let l:b = str2nr(a:color[5:6], 16) * 6 / 256
-
-  return l:r * 36 + l:g * 6 + l:b + 16
-endfunction
 
 let s:black_256   = s:rgb_to_256(s:black)
 let s:white_256   = s:rgb_to_256(s:white)
