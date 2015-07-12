@@ -104,17 +104,20 @@ hi default link vimHiGroup Identifier
 hi default link vimGroup Identifier
 " }}}
 " highlights for Markdown {{{
-exe 'hi markdownItalic ctermfg=' . s:blue_256    . ' guifg=' . s:blue    . ' cterm=bold gui=bold'
-exe 'hi markdownBold   ctermfg=' . s:green_256   . ' guifg=' . s:green   . ' cterm=bold gui=bold'
-exe 'hi markdownH1     ctermfg=' . s:green_256   . ' guifg=' . s:green   . ' cterm=bold gui=bold'
-exe 'hi markdownH2     ctermfg=' . s:blue_256    . ' guifg=' . s:blue    . ' cterm=bold gui=bold'
-exe 'hi markdownH3     ctermfg=' . s:blue_256    . ' guifg=' . s:blue
+exe 'hi markdownItalic     ctermfg=' . s:blue_256    . ' guifg=' . s:blue    . ' cterm=bold gui=bold'
+exe 'hi markdownBold       ctermfg=' . s:green_256   . ' guifg=' . s:green   . ' cterm=bold gui=bold'
+exe 'hi markdownBoldItalic ctermfg=' . s:green_256   . ' guifg=' . s:green   . ' cterm=bold gui=bold'
+exe 'hi markdownH1         ctermfg=' . s:green_256   . ' guifg=' . s:green   . ' cterm=bold gui=bold'
+exe 'hi markdownH2         ctermfg=' . s:blue_256    . ' guifg=' . s:blue    . ' cterm=bold gui=bold'
+exe 'hi markdownH3         ctermfg=' . s:blue_256    . ' guifg=' . s:blue
 hi default link markdownCodeDelimiter Comment
 hi default link markdownCode Comment
-hi default link markdownLinkTextDelimiter Underlined
-hi default link markdownLinkDelimiter Identifier
+hi default link markdownCodeBlock Comment
+hi default link markdownLinkDelimiter Comment
+hi default link markdownLinkTextDelimiter Comment
+hi default link markdownUrlDelimiter Comment
 hi default link markdownHeadingDelimiter Comment
-hi default link markdownHeadingRule markdownHeadingDelimiter
+hi default link markdownHeadingRule Comment
 hi default link markdownH4 markdownH3
 hi default link markdownH5 markdownH3
 hi default link markdownH6 markdownH3
