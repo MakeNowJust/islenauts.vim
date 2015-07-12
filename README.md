@@ -21,6 +21,10 @@ Plugin 'MakeNowJust/islenauts.vim'
 colorscheme islenauts
 ```
 
+## additional plugins
+
+- [islenauts-lightline.vim](https://github.com/MakeNowJust/islenauts-lightline.vim) - islenauts color scheme for [lightline.vim](https://github.com/itchyny/lightline.vim).
+
 ## author
 
 TSUYUSATO Kitsune <mailto:make.just.on@gmail.com>
