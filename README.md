@@ -16,6 +16,9 @@ NeoBundle 'MakeNowJust/islenauts.vim'
 
 " For Vundle users
 Plugin 'MakeNowJust/islenauts.vim'
+
+" And, append it
+colorscheme islenauts
 ```
 
 ## author
