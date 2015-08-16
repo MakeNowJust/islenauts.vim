@@ -11,12 +11,16 @@
 " |_/ \/ |__/|__/  |  |_/\_/|_/ \_/|_/|_/ \/
 "
 
+" save cpoptions {{{
 let s:save_cpo = &cpo
 set cpo&vim
+" }}}
 
+" colorscheme's name {{{
 " if you copied, renamed and edited this color scheme,
 " it would set color scheme's name remotely.
 let g:colors_name = expand('<sfile>:t:r')
+" }}}
 
 " basic configurations {{{
 set background=dark
@@ -137,6 +141,8 @@ exe 'hi! GitGutterDelete ctermfg=' . s:red_256    . 'guifg=' . s:red    . s:sign
 hi link GitGutterChangeDelete GitGutterChange
 " }}}
 
+" restore cpoptions {{{
 let &cpo = s:save_cpo
+" }}}
 
 " vim: fdm=marker fdc=2 fdl=0
