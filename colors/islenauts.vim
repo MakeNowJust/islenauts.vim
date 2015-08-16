@@ -11,6 +11,9 @@
 " |_/ \/ |__/|__/  |  |_/\_/|_/ \_/|_/|_/ \/
 "
 
+let s:save_cpo = &cpo
+set cpo&vim
+
 " if you copied, renamed and edited this color scheme,
 " it would set color scheme's name remotely.
 let g:colors_name = expand('<sfile>:t:r')
@@ -133,5 +136,7 @@ exe 'hi! GitGutterChange ctermfg=' . s:yellow_256 . 'guifg=' . s:yellow . s:sign
 exe 'hi! GitGutterDelete ctermfg=' . s:red_256    . 'guifg=' . s:red    . s:signbg . ' cterm=bold gui=bold'
 hi link GitGutterChangeDelete GitGutterChange
 " }}}
+
+let &cpo = s:save_cpo
 
 " vim: fdm=marker fdc=2 fdl=0
