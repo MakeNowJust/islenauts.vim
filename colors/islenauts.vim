@@ -76,7 +76,7 @@ exe 'hi! Number       ctermfg=' . s:cyan_256    . ' guifg=' . s:cyan
 exe 'hi! Boolean      ctermfg=' . s:cyan_256    . ' guifg=' . s:cyan
 exe 'hi! Identifier   ctermfg=' . s:blue_256    . ' guifg=' . s:blue
 exe 'hi! Statement    ctermfg=' . s:green_256   . ' guifg=' . s:green    . ' cterm=none gui=none'
-exe 'hi! Operator     ctermfg=' . s:white_256   . ' guifg=' . s:white
+exe 'hi! Operator     ctermfg=' . s:green_256   . ' guifg=' . s:green
 exe 'hi! PreProc      ctermfg=' . s:gray2_256   . ' guifg=' . s:gray2
 exe 'hi! Include      ctermfg=' . s:green_256   . ' guifg=' . s:green
 exe 'hi! Type         ctermfg=' . s:green_256   . ' guifg=' . s:green
