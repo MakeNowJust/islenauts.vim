@@ -115,7 +115,8 @@ exe 'hi markdownItalic     ctermfg=' . s:blue_256    . ' guifg=' . s:blue    . '
 exe 'hi markdownBold       ctermfg=' . s:green_256   . ' guifg=' . s:green   . ' cterm=bold gui=bold'
 exe 'hi markdownBoldItalic ctermfg=' . s:green_256   . ' guifg=' . s:green   . ' cterm=bold gui=bold'
 exe 'hi markdownH1         ctermfg=' . s:green_256   . ' guifg=' . s:green   . ' cterm=bold gui=bold'
-exe 'hi markdownH2         ctermfg=' . s:green_256   . ' guifg=' . s:green
+exe 'hi markdownH2         ctermfg=' . s:green_256   . ' guifg=' . s:green   . ' cterm=bold gui=bold'
+exe 'hi markdownH3         ctermfg=' . s:green_256   . ' guifg=' . s:green
 hi default link markdownCodeDelimiter Comment
 hi default link markdownCode Comment
 hi default link markdownCodeBlock Comment
@@ -124,10 +125,9 @@ hi default link markdownLinkTextDelimiter Comment
 hi default link markdownUrlDelimiter Comment
 hi default link markdownHeadingDelimiter Comment
 hi default link markdownHeadingRule Comment
-hi default link markdownH3 markdownH2
-hi default link markdownH4 markdownH2
-hi default link markdownH5 markdownH2
-hi default link markdownH6 markdownH2
+hi default link markdownH4 markdownH3
+hi default link markdownH5 markdownH3
+hi default link markdownH6 markdownH3
 " }}}
 " highlights for JavaScript {{{
 hi default link javascriptNumber Number
