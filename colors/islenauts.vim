@@ -81,6 +81,7 @@ exe 'hi! PreProc      ctermfg=' . s:gray2_256   . ' guifg=' . s:gray2
 exe 'hi! Include      ctermfg=' . s:green_256   . ' guifg=' . s:green
 exe 'hi! Type         ctermfg=' . s:green_256   . ' guifg=' . s:green
 exe 'hi! Special      ctermfg=' . s:magenta_256 . ' guifg=' . s:magenta
+exe 'hi! Title        ctermfg=' . s:magenta_256 . ' guifg=' . s:magenta
 exe 'hi! Delimiter    ctermfg=' . s:green_256   . ' guifg=' . s:green
 exe 'hi! Underlined   ctermfg=' . s:magenta_256 . ' guifg=' . s:magenta  . ' cterm=none gui=none'
 exe 'hi! Ignore       ctermfg=' . s:gray3_256   . ' guifg=' . s:gray3    . ' ctermbg=' . s:yellow_256  . ' guibg=' . s:yellow
